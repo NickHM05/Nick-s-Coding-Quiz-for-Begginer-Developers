@@ -5,19 +5,64 @@
 body{
     background-color: antiquewhite;
     background-image: linear-gradient(315deg,#b8c6db 0%, #f5f7f7 100%);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 800px;
     overflow: hidden;
     margin: 0;
 }
 
 .quiz-container{
-    background-color: aqua;
+    background-color: rgb(238, 236, 236);
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
     width: 600px;
     overflow: hidden;
+}
+
+.quiz-header{
+    padding: 48px;
+}
+
+h2{
+    padding:16px;
+    text-align: center;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    font-size:19.2px;
+    margin:16px 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+button{
+background-color: blue;
+color: #fff;
+border: none;
+display: block;
+width: 100%;
+cursor:pointer;
+font-size: 17.2px;
+font-family: inherit;
+padding:20.8px;
+}
+
+button:hover{
+    background-color: #04adc4;
+}
+
+button:focus{
+    outline: none;
+    background-color: rgb(222, 36, 36);
 }

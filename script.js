@@ -1,3 +1,4 @@
+
 const quizData = [
     {
         question:"What does HTML stand for?",
@@ -67,7 +68,7 @@ const quizData = [
 
 ];
 
-const quiz=document.getElementById('quiz')
+const quiz=document.getElementById('quizAD')
 const answerEls=document.getElementById('.answer')
 const questionEl=document.getElementById('question')
 const a_text=document.getElementById('a_text')
@@ -80,13 +81,12 @@ const submitBtn=document.getElementById('submit')
 let currentQuiz = 0
 let score = 0
 
-loadQuiz()
-
 function loadQuiz(){
 
     deselectAnswers()
 
     const currentQuizData = quizData[currentQuiz]
+    questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
     c_text.innerText = currentQuizData.c
@@ -94,10 +94,10 @@ function loadQuiz(){
 }
 
 function deselectAnswers() {
-    answerEls.forEach(answerEl => answerEl.checked = false)
+    answerEls.forEach(answerEls => answerEls.checked = false)
 }
 
-function getSelected(){
+function getSelected() {
     let answer
     answerEls.forEach(answerEl => {
         if(answerEl.checked) {
@@ -119,10 +119,10 @@ submitBtn.addEventListener('click', () => {
         if(currentQuiz < quizData.length) {
             loadQuiz()
         } else {
-            quiz.innerHTML = '
+            quiz.innerHTML = `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-            
-            <button onclick="location.reload()">Reload</button>'
+
+            <button onclick="location.reload()">Reload</button>`
             
         }
     }

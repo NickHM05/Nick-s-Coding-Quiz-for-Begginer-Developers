@@ -2,11 +2,11 @@
 const quizData = [
     {
         question:"What does HTML stand for?",
-        a: "Hyperterminal Max Loader",
-        b: "Hypertext Madeup Language",
-        c: "Hypertext Markup Language",
-        d: "Hybrid Terminal Modification Link",
-        correct: "c",
+        a:"Hyperterminal Max Loader",
+        b:"Hypertext Madeup Language",
+        c:"Hypertext Markup Language",
+        d:"Hybrid Terminal Modification Link",
+        correct:"c",
     },
     {
         question:"What element is a container for all the head elements, and may include the document title, scripts, styles, meta information, and more?",
@@ -68,8 +68,8 @@ const quizData = [
 
 ];
 
-const quiz=document.getElementById('quizAD')
-const answerEls=document.getElementById('.answer')
+const quiz=document.getElementById('quiz')
+const answerEls=document.querySelectorAll('.answer')
 const questionEl=document.getElementById('question')
 const a_text=document.getElementById('a_text')
 const b_text=document.getElementById('b_text')
@@ -99,9 +99,9 @@ function deselectAnswers() {
 
 function getSelected() {
     let answer
-    answerEls.forEach(answerEl => {
-        if(answerEl.checked) {
-            answer = answerEl.id
+    answerEls.forEach(answerEls => {
+        if(answerEls.checked) {
+            answer = answerEls.id
         }
     })
     return answer

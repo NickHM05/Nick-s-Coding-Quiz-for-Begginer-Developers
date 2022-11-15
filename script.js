@@ -119,14 +119,12 @@ function startTimer() {
         if (isWin && timerCount > 0) {
           // Clears interval and stops timer
           clearInterval(timer);
-          winGame();
         }
       }
       // Tests if time has run out
       if (timerCount === 0) {
         // Clears interval
         clearInterval(timer);
-        loseGame();
       }
     }, 1000);
   }

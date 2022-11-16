@@ -13,10 +13,6 @@ Half Done        THEN I can save my initials and score
 
         USE A LOCAL STORAGE not a requirement but it helps you to store a high score
 
-    Change loadquiz so that it not only appears when the answers are deselected.
-
-    Timer needs to be set to global instead of local to start quiz
-
 # Beginner Developer Code Quiz
 
 ## Description

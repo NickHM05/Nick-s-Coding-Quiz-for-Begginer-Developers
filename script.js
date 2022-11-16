@@ -154,10 +154,6 @@ function getSelected() {
 }
 
 submitBtn.addEventListener('click', () => {
-    // If the count is zero, exit function
-    // if (timerCount === 0) {
-    //   return;
-    // }
     const answer = getSelected()
     if (answer) {
         if (answer === quizData[currentQuiz].correct) {
@@ -176,8 +172,6 @@ submitBtn.addEventListener('click', () => {
             loadQuiz()
         } else {
             conclusionshow()
-             //quiz.innerHTML = ` <h2>You answered ${score}/${quizData.length} 
-             //questions correctly</h2><button onclick="location.reload()">Reload</button>`
         }
     }
 })
@@ -200,9 +194,12 @@ startbutton.addEventListener("click", function () {
 document.getElementById("save-user").addEventListener("click", function(){
     var user= {
         name:document.getElementById("user").value,
-        score: (score+timerCount)
+        score:(score+timerCount)
     }
     var previousScore = JSON.parse(localStorage.getItem("codequiz")) || []
     previousScore.push(user)
     localStorage.setItem("codequiz",JSON.stringify(previousScore))
 })
+
+
+//something is wrong with line 203

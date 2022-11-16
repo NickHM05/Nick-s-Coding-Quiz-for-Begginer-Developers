@@ -11,23 +11,14 @@ Done    THEN the game is over
 Done    WHEN the game is over
 Half Done        THEN I can save my initials and score
 
-        USE A LOCAL STORAGE not a requirement but it helps you to store a high score
-
 # Beginner Developer Code Quiz
 
 ## Description
-The motivation behind this project was to 
+The motivation behind this project was to create an interactive application of web-apis in the form of a beginner developer coding quiz that the user can save their initials and score.
 
+This project was built to study some of the puzzeling questions that young developers can face and how to answer them in the form of a game.
 
-to get a better handle of using javascript to create something semi-useful with what we have learned.
-
-This project was made to create a unique password generator for the user to create their own password in several ways using either symbols, numbers, lower case letters, and/or uppercase letters.They can then copy the password and use it at their own discretion.
-
-In turn, this project solves the problem of thinking of a unique password for different websites and accurately fits the needs of modern websites by following criteria such as using, uppercase letters, lowercase letters, special characters, and numbers in a given password.
-
-I learned about how to use the proper ways to use functions, methods, else if statements, loops, and more methodologies from javascript in order to create an application for use and to solve every type of user input into an application. If the user found a way to break the application it would not seem that useful.
-
-
+I learned how to implement a timer and a high score webpage for the user to have when playing the game which is something ive never known how to do before.Using a list of lists to create the questions for the user to use was very useful.
 
 ## Table of Contents
 

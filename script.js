@@ -176,11 +176,8 @@ submitBtn.addEventListener('click', () => {
             loadQuiz()
         } else {
             conclusionshow()
-            /* quiz.innerHTML = `
-             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
- 
-             <button onclick="location.reload()">Reload</button>`
-             */
+             //quiz.innerHTML = ` <h2>You answered ${score}/${quizData.length} 
+             //questions correctly</h2><button onclick="location.reload()">Reload</button>`
         }
     }
 })
@@ -189,9 +186,9 @@ function conclusionshow() {
     clearInterval(timer);
     quiz.style.display = "none"
     conclusion.style.display = "block"
-    document.getElementById("display-score").innerText = "Your Final Score (score+time left): "+(score+timerCount)
-    
-}
+    document.getElementById("display-score").innerText = "Your Final Score (score+time left): "+
+    (score+timerCount)
+    }
 
 startbutton.addEventListener("click", function () {
     quiz.style.display = "block"

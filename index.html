@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css",>
+    <link rel="stylesheet" href="assets/style.css" ,>
     <title>Developer Quiz</title>
 </head>
+
 <body>
-    
-    
+    <section id="intro">
+        <p>instructions...</p>
+        <button id="start">Start Game</button>
+    </section>
+
     <div class="quiz-container" id="quiz">
         <div class="quiz-header">
-            <h2 id="question">"What does HTML stand for?"</h2>
+            <h2 id="question"></h2>
             <ul>
                 <li>
                     <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text">Hyperterminal Max Loader</label>
+                    <label for="a" id="a_text">Hx Loader</label>
                 </li>
 
                 <li>
@@ -27,7 +32,7 @@
                 <li>
                     <input type="radio" name="answer" id="c" class="answer">
                     <label for="c" id="c_text">Hypertext Markup Language</label>
-                </li>   
+                </li>
 
                 <li>
                     <input type="radio" name="answer" id="d" class="answer">
@@ -42,25 +47,29 @@
 
     <section>
         <div class="card results">
-          <div class = "win-loss-container">
-          <div>
-          <h2>Highscore: <span class="win">0 </span> </h2>
-          <h2>Losses: <span class="lose">0</span></h2>
-        </div>
-          <button class="reset-button">Reset Score</button>
-      </div>
-          <div class= "card timer">
-            <div class = "timer-text">
-            <div class="large-font timer-count">100</div>
-            <h3>seconds remaining</h3>
-          </div>
-        
-          </div>
-        </div>
-      </section>
-    
-    
-<script src="script.js"></script>
-    
+            <div class="win-loss-container">
+                <div>
+                    <h2>score: <span class="win">0 </span> </h2>
+                    <h2>Losses: <span class="lose">0</span></h2>
+                </div>
+                <!-- <button class="reset-button">Reset Score</button> -->
+            </div>
+            <div class="card timer">
+                <div class="timer-text">
+                    <div class="large-font timer-count">100</div>
+                    <h3>seconds remaining</h3>
+    </section>
+
+    <section id="conclusion">
+        <h6 id="display-score"></h6>
+        <label>Enter User initials</label>
+        <input id="user" type="test" />
+        <button id="save-user">Save User Score</button>
+        <a href="./highscores.html">Check High Scores</a>"
+    </section>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

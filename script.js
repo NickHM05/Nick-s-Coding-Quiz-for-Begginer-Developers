@@ -1,4 +1,4 @@
-
+//The array that will hold all of the questions
 const quizData =
 [
     {
@@ -76,7 +76,7 @@ const quizData =
 
 
 ];
-//check line 133 on javascript to different page in case something doesnt work
+//all of the variables for use throughout the javascript
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
@@ -99,7 +99,7 @@ timerCount = 100;
 let currentQuiz = 0
 let score = 0
 let missed = 0
-
+//helps so that some pages wont show while taking the quiz
 quiz.style.display = "none"
 conclusion.style.display = "none"
 
@@ -150,6 +150,7 @@ answerEls.forEach(answerEls => {
     }
 })
 console.log("selected",answer)
+//checking console to see if the intended function worked
 return answer
 }
 
@@ -165,7 +166,7 @@ if (answer) {
         timerCount -= 10
         console.log("missed",missed)
     }
-
+//10 seconds is subtracted from the timer (and score, the score is equal to time + answered answered questions that are right out of 8)
 
     if (currentQuiz < quizData.length - 1) {
         currentQuiz++
@@ -175,7 +176,7 @@ if (answer) {
     }
 }
 })
-
+//here is the score card from the quiz
 function conclusionshow() {
 clearInterval(timer);
 quiz.style.display = "none"
@@ -183,7 +184,7 @@ conclusion.style.display = "block"
 document.getElementById("display-score").innerText = "Your Final Score (score+time left): "+
 (score+timerCount)
 }
-
+//here is our eventlistener that starts the quiz after a click
 startbutton.addEventListener("click", function () {
 quiz.style.display = "block"
 startTimer()

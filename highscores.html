@@ -15,9 +15,11 @@
         var previousScore = JSON.parse(localStorage.getItem("codequiz")) || []
         var html =""
         for(let i=0;i<previousScore.length;i++){
-            html += `<ul><li> ${previousScore[i].name}</li></ul>`
+            html += `<ul><li> ${previousScore[i].name}<br>${previousScore[i].score}</li></ul>`
         }
         document.getElementById("disp").innerHTML= html
+        
     </script>
 </body>
 </html>
+<!--The above code takes info from the local storage and spits it out onto the page.-->

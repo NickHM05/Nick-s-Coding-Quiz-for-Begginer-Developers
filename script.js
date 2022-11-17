@@ -198,8 +198,8 @@ var user= {
 }
 var previousScore = JSON.parse(localStorage.getItem("codequiz")) || []
 previousScore.push(user)
-localStorage.setItem("codequiz",JSON.stringify(previousScore))
+localStorage.setItem("codequiz",JSON.stringify(previousScore)
+)
 })
 
 
-//something is wrong with line 203

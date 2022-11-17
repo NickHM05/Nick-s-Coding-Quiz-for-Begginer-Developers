@@ -34,7 +34,8 @@ Enter the URL from the website. My website:https://nickhm05.github.io/Nick-s-Cod
 
 URL of the github repository:https://github.com/NickHM05/Nick-s-Coding-Quiz-for-Begginer-Developers
 ## Usage
-![Screenshot of the page](./assets/images/ "Screenshot Page")
+![Screenshot of the page](./screenshots/Screenshot%20(111).png "Screenshot Page")
+![Screenshot of the page](./screenshots/Screenshot%20(112).png "Screenshot Page")
 
 
 ## Credits

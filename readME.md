@@ -17,7 +17,7 @@ I learned how to implement a timer and a high score webpage for the user to have
 
 ## Installation
 
-Enter the URL from the website. My website:https://nickhm05.github.io/Nick-s-Coding-Quiz-for-Begginer-Developers/
+My website:https://nickhm05.github.io/Nick-s-Coding-Quiz-for-Begginer-Developers/
 
 URL of the github repository:https://github.com/NickHM05/Nick-s-Coding-Quiz-for-Begginer-Developers
 ## Usage

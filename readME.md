@@ -17,9 +17,9 @@ I learned how to implement a timer and a high score webpage for the user to have
 
 ## Installation
 
-My website:https://nickhm05.github.io/Nick-s-Coding-Quiz-for-Begginer-Developers/
+My website:https://nickhm05.github.io/Nick-s-Coding-Quiz-for-Beginner-Developers/
 
-URL of the github repository:https://github.com/NickHM05/Nick-s-Coding-Quiz-for-Begginer-Developers
+URL of the github repository:https://github.com/NickHM05/Nick-s-Coding-Quiz-for-Beginner-Developers
 ## Usage
 ![Screenshot of the page](./screenshots/Screenshot%20(111).png "Screenshot Page")
 ![Screenshot of the page](./screenshots/Screenshot%20(112).png "Screenshot Page")
